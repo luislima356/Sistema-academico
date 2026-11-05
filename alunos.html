@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alunos - Sistema Acadêmico</title><link rel="stylesheet" href="css/style.css">
+  <script src="js/dados.js" defer></script><script src="js/app.js" defer></script>
+</head>
+<body>
+<header class="cabecalho"><h1 id="titulo-sistema">SISTEMA DE GERENCIAMENTO ACADÊMICO</h1><span>Área Acadêmica</span></header>
+<nav><ul><li><a href="index.html">Dashboard</a></li><li><a href="alunos.html">Alunos</a></li><li><a href="cursos.html">Cursos</a></li><li><a href="matriculas.html">Matrículas</a></li><li><a href="usuarios.html">Usuários</a></li></ul></nav>
+<main>
+  <section class="painel">
+    <div class="cabecalho-secao"><div><h2>ALUNOS</h2><p>Consulte, filtre e gerencie os alunos cadastrados.</p></div><a class="botao" href="aluno-form.html">+ Novo aluno</a></div>
+    <div class="filtros">
+      <div><label for="busca">Buscar aluno</label><input id="busca" type="search" placeholder="Digite o nome do aluno"></div>
+      <div><label for="filtro-status">Status</label><select id="filtro-status"><option value="">Todos</option><option value="ativo">Ativo</option><option value="inativo">Inativo</option></select></div>
+      <button type="button" id="btn-atualizar" class="botao-secundario">Atualizar lista</button>
+    </div>
+    <div id="lista-alunos" class="lista-grid"></div>
+    <section id="detalhes-aluno" class="detalhes">
+      <h2>Detalhes do Aluno</h2><p id="detalhe-nome">Selecione “Ver detalhes” em um aluno.</p><p id="detalhe-curso"></p><p id="detalhe-status"></p>
+    </section>
+  </section>
+</main>
+<footer><p>© 2026 Sistema de Gerenciamento Acadêmico. Todos os direitos reservados.</p></footer>
+</body></html>
